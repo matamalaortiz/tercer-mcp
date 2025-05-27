@@ -486,7 +486,7 @@ export class MyMCP extends McpAgent {
 			{
 				prompt_text: z.string().describe("Text prompt for image generation"),
 				model: z.enum(["gen4_image"]).default("gen4_image").describe("Model to use for generation"),
-				ratio: z.enum(["720:720","1920:1080", "1080:1920", "1280:720", "720:1280", "1024:1024"]).default("720:720").describe("Image aspect ratio"),
+				ratio: z.enum(["720:720","1920:1080", "1080:1920", "1280:720", "720:1280", "1024:1024"]).default("1024:1024").describe("Image aspect ratio"),
 				reference_images: z.array(z.object({
 					uri: z.string().describe("URL or base64 data URI of reference image"),
 					tag: z.string().optional().describe("Tag to reference this image in the prompt using @tag syntax"),

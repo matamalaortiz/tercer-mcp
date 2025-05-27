@@ -22277,7 +22277,7 @@ Use runway_get_task to check manually.`
       {
         prompt_text: external_exports.string().describe("Text prompt for image generation"),
         model: external_exports.enum(["gen4_image"]).default("gen4_image").describe("Model to use for generation"),
-        ratio: external_exports.enum(["720:720", "1920:1080", "1080:1920", "1280:720", "720:1280", "1024:1024"]).default("720:720").describe("Image aspect ratio"),
+        ratio: external_exports.enum(["720:720", "1920:1080", "1080:1920", "1280:720", "720:1280", "1024:1024"]).default("1024:1024").describe("Image aspect ratio"),
         reference_images: external_exports.array(external_exports.object({
           uri: external_exports.string().describe("URL or base64 data URI of reference image"),
           tag: external_exports.string().optional().describe("Tag to reference this image in the prompt using @tag syntax")
