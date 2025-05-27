@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tercer-mcp": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://tercer-mcp.matamala.workers.dev/sse"]
+    }
+  }
+} 

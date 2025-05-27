@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "tercer-mcp": {
+      "command": "/Users/alejandromatamala/.nvm/versions/node/v18.20.8/bin/npm",
+      "args": ["run", "mcp"],
+      "cwd": "/Users/alejandromatamala/Desktop/tercer-mcp"
+    }
+  }
+} 
